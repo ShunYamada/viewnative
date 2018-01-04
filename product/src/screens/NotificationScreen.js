@@ -1,15 +1,15 @@
 import React from 'react';
 import {
   StyleSheet,
-  Text,
   View
 } from 'react-native';
+import NewsList from '../components/NewsList'
 
 class NotificationScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Notification</Text>
+        <NewsList />
       </View>
     );
   }
@@ -18,8 +18,6 @@ class NotificationScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#f4f4f4'
   },
   text: {

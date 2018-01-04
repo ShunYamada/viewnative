@@ -10,6 +10,7 @@ const SignedIn = TabNavigator({
   Home: {
     screen: HomeScreen,
     navigationOptions: {
+      title: 'HOME',
       tabbarLabel: 'HOME',
       tabBarIcon: ({tintColor}) => (
         <Icon
@@ -23,6 +24,7 @@ const SignedIn = TabNavigator({
   Notification: {
     screen: NotificationScreen,
     navigationOptions: {
+      title: 'NOTIFICATION',
       tabbarLabel: 'NOTIFICATION',
       tabBarIcon: ({tintColor}) => (
         <Icon
