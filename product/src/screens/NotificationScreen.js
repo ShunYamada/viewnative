@@ -4,12 +4,16 @@ import {
   View
 } from 'react-native';
 import NewsList from '../components/NewsList'
+import Header from '../components/Header'
 
 class NotificationScreen extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <NewsList />
+      <View style={{flex: 1}}>
+        <Header headerText={'Notification'} />
+        <View style={styles.container}>
+          <NewsList />
+        </View>
       </View>
     );
   }
